@@ -12,7 +12,7 @@ Just like other Package Managers
 
 ```plain
 $ brew install node   # MacOS
-$ apt-get install node   # Linux
+$ apt-get install nginx   # Linux
 $ npm install gulp   # npm
 ```
 
@@ -34,15 +34,17 @@ $ prts subime_text   # would not block
 
 ## Mechanism
 
-Get-Link -> Download -> Extract -> Add-to-Path
+Get-URL -> Download -> (Extract) -> Link-to-Path
 
 ## Todo & Cons
 
 - Async processing
 - Streaming download
 - ProgressBar for download
+- Version control
 - More packages to include
 - More testing
+- Build/cache files division
 - The implementation is very hack now
 
 ## Current Packages Included
@@ -51,13 +53,14 @@ Get-Link -> Download -> Extract -> Add-to-Path
 - `electron`
 - `mongodb`
 - `sublime_text`
+- `ffmpeg`
 
 **We need your forks!**
 
 ## Why I Built this?
 
-Sometimes I need to help friends to install apps, in Windows. And what we have to do is always: visit a website, click a link, download sth, and then extract it or run a setup... Holy shit!
+Sometimes I need to help friends install apps, in Windows. And what we have to do is always: visit a site, click a link, download sth, and then extract it or run a setup... Holy shit!
 
 What if just a line of terminal command via homebrew, apt-get, etc?!
 
-So I determined to bring such a package manager for Windows. But as you see, we have very few apps now, and we support only zips which are portable. It's the very beginning.
+So I determined to bring such a package manager to Windows. But as you see, we have very few apps now. It's the very beginning.

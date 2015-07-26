@@ -1,6 +1,6 @@
 {
   "name": "prt",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Package Manager for Windows",
   "repository": "git@github.com:fritx/prt.git",
   "keywords": [
@@ -10,13 +10,17 @@
     "windows",
     "install"
   ],
+  "os": [
+    "win32"
+  ],
   "bin": {
     "prts": "bin/prt-spawn.js",
     "prt": "bin/prt.js"
   },
   "dependencies": {
+    "7zip": "0.0.1",
     "download": "^4.1.4",
     "glob": "^5.0.14",
-    "simple-glob": "^0.1.0"
+    "shelljs": "^0.5.1"
   }
 }
