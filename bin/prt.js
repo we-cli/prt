@@ -11,7 +11,7 @@ var createWriteStream = require('fs').createWriteStream
 var os_arch = require('os').arch
 var shell = require('shelljs')
 var glob = require('glob')
-var _7z = require('7zip')
+var _7z = require('7zip')['7z']
 var Download = require('download')
 //var dwn = require('dwn')
 //var bar = require('progress-bar').create(process.stdout)
@@ -126,7 +126,7 @@ function unpack(mod, callback){
 
 function download(mod, callback){
   var uri = mod.get_url(mod.version, os_arch())
-  var dest = resolve('./cache', mod.name, mod.version)
+  var dest = resolve(__dirname, '../cache', mod.name, mod.version)
   var fname = basename(url_parse(uri).pathname)
   var file = resolve(dest, fname)
   var ext = extname(file)

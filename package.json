@@ -18,7 +18,7 @@
     "prt": "bin/prt.js"
   },
   "dependencies": {
-    "7zip": "0.0.1",
+    "7zip": "0.0.3",
     "download": "^4.1.4",
     "glob": "^5.0.14",
     "shelljs": "^0.5.1"
