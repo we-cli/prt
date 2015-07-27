@@ -35,7 +35,7 @@ switch (action) {
 }
 
 function do_install(name, version, callback){
-  var listdir = resolve('./list/')
+  var listdir = resolve(__dirname, '../list/')
   var modname = resolve(listdir, name)
   if (modname.indexOf(listdir) !== 0) { // bad guy detected
     callback(new Error('invalid pak'))
