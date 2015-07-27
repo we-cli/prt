@@ -1,6 +1,6 @@
 {
   "name": "prt",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Package Manager for Windows",
   "repository": "git@github.com:fritx/prt.git",
   "keywords": [
